@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Over!</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="static/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <p>Delivered as promised!</p>
+        {% if attempts == 1 %}
+        <p>I've guessed the number you had in mind in {{ attempts }} step.</p>
+        {% else %}
+        <p>I've guessed the number you had in mind in {{ attempts }} steps.</p>
+        {% endif %}
+        <p>Press RESTART to start over.</p>
+        <form action=""method="POST">
+            <button>RESTART</button>
+        </form>
+    </div>
+</body>
+</html>

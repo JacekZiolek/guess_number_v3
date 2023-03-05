@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="static/main.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <p>Attempt number {{ attempts }}.</p>
+    <p>My guess is: {{ guess }}.</p>
+    <form action="" method="POST">
+        <button name="button" value="too_much">TOO MUCH</button>
+        <button name="button" value="too_little">TOO LITTLE</button>
+        <button name="button" value="guessed">THAT'S IT!</button>
+        <input type="hidden" name="max" value="{{ max }}" />
+        <input type="hidden" name="min" value="{{ min }}" />
+        <input type="hidden" name="attempts" value="{{ attempts }}" />
+    </form>
+</div>
+</body>
+</html>

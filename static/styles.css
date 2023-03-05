@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: dimgray;
+    height: 100%;
+}
+
+p {
+    color: white;
+    font-family: Helvetica;
+    font-size: x-large;
+    text-align: center;
+}
+
+form {
+    display: inherit;
+    justify-content: center;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    color: white;
+    font-family: Helvetica;
+    font-size: large;
+    text-align: center;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.active_btn {
+    color: lightslategray;
+    background-color: white;
+}
+
+.container {
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    height: 800px;
+    width: 600px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: lightslategray;
+    padding: 15px;
+}
